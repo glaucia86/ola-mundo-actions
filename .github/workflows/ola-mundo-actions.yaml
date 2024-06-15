@@ -1,0 +1,14 @@
+name: Olá, Mundo!
+
+on: [push]
+
+jobs:
+  ola_mundo_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run ola mundo script
+        run: echo "Olá, Mundo!"
