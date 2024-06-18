@@ -2,12 +2,13 @@ name: Ola, Mundo!
 
 on: [push]
 
-jobs: 
-  ola_mundo_job:
+jobs:
+  ola_mundo_jobs:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
 
-      - name: Run Ola, Mundo!
-        run: echo "Ola, Mundo!"
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Ola, Mundo!
+      run: echo "Ola, Mundo!"
